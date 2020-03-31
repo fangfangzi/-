@@ -1,0 +1,11 @@
+l = []
+for i in range(arr.shape[0]):
+    each_list = []
+    for each in arr[i]:
+        try:
+            each = float(each)
+            each_list.append(each)
+        except:
+            each = np.nan
+            each_list.append(each)
+    l.append(np.array(each_list))
